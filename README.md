@@ -1,28 +1,28 @@
 # Meower - Twitter for Cats
 
-A basic twitter clone built to demonstrate the full stack (client, server, database).
+A basic twitter clone built to demonstrate the full stack 🥞 (client, server, database).
 
 With the following features:
 
-* Cats can send a mew
-* Cats can see all mews that have been sent
+* Cats can send a mew 😸
+* Cats can see all mews that have been sent 😻
 
 ![example-site](example-site.gif)
 
 ## Objectives
 
-* [ ] Diagram the Full Stack
-* [ ] Differentiate between Client and Server
-* [ ] Get user input on the Client
-* [ ] Send user input from the client with fetch to the server
-* [ ] Store data in a database
-* [ ] Retrieve data from a database on the Server
-* [ ] Retrieve data from a server on the client using Fetch
-* [ ] Hide/Show elements on the client
-* [ ] Add elements to the page on the client
-* [ ] Deploy the client with now.sh
-* [ ] Deploy the database with mlab
-* [ ] Deploy the server with now.sh
+* [ ] 📝 Diagram the Full Stack
+* [ ] 🔎 Differentiate between Client and Server
+* [ ] ⌨️ Get user input on the Client
+* [ ] ➡️ Send user input from the client with fetch to the server
+* [ ] 🗃 Store data in a database
+* [ ] 🔍 Retrieve data from a database on the Server
+* [ ] ⬅️ Retrieve data from a server on the client using Fetch
+* [ ] 🙈 Hide/Show elements on the client
+* [ ] ✨ Add elements to the page on the client
+* [ ] 🚀 Deploy the client with now.sh
+* [ ] 🚀 Deploy the database with mlab
+* [ ] 🚀 Deploy the server with now.sh
 
 ## Front-end
 
