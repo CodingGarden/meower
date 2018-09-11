@@ -3,6 +3,8 @@
 * [ ] Cats can send mew
 * [ ] Cats can see all mews that have been sent
 
+![example-site](example-site.gif)
+
 ## Objectives
 
 * [ ] Diagram the Full Stack
