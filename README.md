@@ -128,6 +128,7 @@ With the following features:
 
 ## What's next?
 
+* Add comments/replies to a mew
 * User Accounts
   * Don't just have the user enter their name
   * Sign up/Login
