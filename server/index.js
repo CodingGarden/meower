@@ -10,6 +10,8 @@ const db = monk(process.env.MONGO_URI || 'localhost/meower');
 const mews = db.get('mews');
 const filter = new Filter();
 
+app.enable("trust proxy");
+
 app.use(cors());
 app.use(express.json());
 
@@ -28,8 +30,8 @@ app.get('/mews', (req, res) => {
 });
 
 function isValidMew(mew) {
-  return mew.name && mew.name.toString().trim() !== '' &&
-    mew.content && mew.content.toString().trim() !== '';
+  return mew.name && mew.name.toString().trim() !== '' && mew.name.toString().trim().length <= 50 &&
+    mew.content && mew.content.toString().trim() !== '' && mew.content.toString().trim().length <= 140;
 }
 
 app.use(rateLimit({
@@ -53,7 +55,7 @@ app.post('/mews', (req, res) => {
   } else {
     res.status(422);
     res.json({
-      message: 'Hey! Name and Content are required!'
+      message: 'Hey! Name and Content are required! Name cannot be longer than 50 characters. Content cannot be longer than 140 characters.'
     });
   }
 });
