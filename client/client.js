@@ -16,7 +16,7 @@ form.addEventListener('submit', (event) => {
   const name = formData.get('name');
   const content = formData.get('content');
 
-  if (true) {
+  if (name.trim() && content.trim()) {
     errorElement.style.display = 'none';
     form.style.display = 'none';
     loadingElement.style.display = '';
