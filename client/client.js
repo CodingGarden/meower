@@ -1,11 +1,12 @@
 console.log('Hello World!');
 
 const form = document.querySelector('form'); // grabbing an element on the page
+const errorElement = document.querySelector('.error-message');
 const loadingElement = document.querySelector('.loading');
 const mewsElement = document.querySelector('.mews');
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/mews' : 'https://meower-api.now.sh/mews';
+const API_URL = window.location.hostname === '127.0.0.1' ? 'http://localhost:5000/mews' : 'https://meower-api.now.sh/mews';
 
-loadingElement.style.display = '';
+errorElement.style.display = 'none';
 
 listAllMews();
 
@@ -15,28 +16,47 @@ form.addEventListener('submit', (event) => {
   const name = formData.get('name');
   const content = formData.get('content');
 
-  const mew = {
-    name,
-    content
-  };
+  if (true) {
+    errorElement.style.display = 'none';
+    form.style.display = 'none';
+    loadingElement.style.display = '';
 
-  form.style.display = 'none';
-  loadingElement.style.display = '';
-  
-  fetch(API_URL, {
-    method: 'POST',
-    body: JSON.stringify(mew),
-    headers: {
-      'content-type': 'application/json'
-    }
-  }).then(response => response.json())
-    .then(createdMew => {
+    const mew = {
+      name,
+      content
+    };
+    
+    fetch(API_URL, {
+      method: 'POST',
+      body: JSON.stringify(mew),
+      headers: {
+        'content-type': 'application/json'
+      }
+    }).then(response => {      
+      if (!response.ok) {
+        const contentType = response.headers.get('content-type');
+        if (contentType.includes('json')) {
+          return response.json().then(error => Promise.reject(error.message));
+        } else {
+          return response.text().then(message => Promise.reject(message));
+        }
+      }
+    }).then(() => {
       form.reset();
       setTimeout(() => {
         form.style.display = '';
       }, 30000);
       listAllMews();
+    }).catch(errorMessage => {
+      form.style.display = '';
+      errorElement.textContent = errorMessage;
+      errorElement.style.display = '';
+      loadingElement.style.display = 'none';
     });
+  } else {
+    errorElement.textContent = 'Name and content are required!';
+    errorElement.style.display = '';
+  }
 });
 
 
