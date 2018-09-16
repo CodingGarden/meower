@@ -42,8 +42,8 @@ app.use(rateLimit({
 app.post('/mews', (req, res) => {
   if (isValidMew(req.body)) {
     const mew = {
-      name: filter.clean(req.body.name.toString()),
-      content: filter.clean(req.body.content.toString()),
+      name: filter.clean(req.body.name.toString().trim()),
+      content: filter.clean(req.body.content.toString().trim()),
       created: new Date()
     };
 

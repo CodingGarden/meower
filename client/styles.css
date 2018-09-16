@@ -29,6 +29,14 @@
   border-radius: 4px;
 }
 
+.mews > div > h3 {
+  word-wrap: break-word;
+}
+
+.mews > div > p {
+  word-wrap: break-word;
+}
+
 .mews > div:not(:last-child) {
   margin-bottom: 8px;
 }
