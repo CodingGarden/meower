@@ -39,7 +39,7 @@ app.use(rateLimit({
   max: 1
 }));
 
-app.post('/mews', (req, res) => {
+app.post('/mews', (req, res, next) => {
   if (isValidMew(req.body)) {
     const mew = {
       name: filter.clean(req.body.name.toString().trim()),
@@ -51,13 +51,20 @@ app.post('/mews', (req, res) => {
       .insert(mew)
       .then(createdMew => {
         res.json(createdMew);
-      });
+      }).catch(next);
   } else {
     res.status(422);
     res.json({
       message: 'Hey! Name and Content are required! Name cannot be longer than 50 characters. Content cannot be longer than 140 characters.'
     });
   }
+});
+
+app.use((error, req, res, next) => {
+  res.status(500);
+  res.json({
+    message: error.message
+  });
 });
 
 app.listen(5000, () => {
