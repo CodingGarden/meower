@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/mews', (req, res) => {
+app.get('/mews', (req, res, next) => {
   mews
     .find()
     .then(mews => {
       res.json(mews);
-    });
+    }).catch(next);
 });
 
 function isValidMew(mew) {
