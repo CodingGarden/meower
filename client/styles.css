@@ -40,3 +40,9 @@
 .mews > div:not(:last-child) {
   margin-bottom: 8px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}

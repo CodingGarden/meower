@@ -1,31 +1,23 @@
-# New Features
+# New Features TODO
 
 * [ ] Pagination
   * Server
-    * [ ] v2 mews endpoint
-    * [ ] Skip and Limit from query params
-      * [ ] Defaults: skip - 0, limit - 10
-      * [ ] Include total count in response
-    * [ ] Order by created date
+    * [x] v2 mews endpoint
+    * [x] Skip and Limit from query params
+      * [x] Defaults: skip - 0, limit - 10
+      * [x] Include total count in response
+    * [x] Order by created date
   * Client
-    * [ ] Skip and Limit variables
-    * [ ] Remove .reverse()
-    * [ ] Previous and Next Buttons
-      * [ ] Hidden on page load
-      * [ ] Only show previous button if skip > 0
-      * [ ] Only show next button if skip + limit < count
-      * [ ] Get next page on next button click
-        * [ ] Set skip, limit
-        * [ ] Disable button
-        * [ ] Request mews
-        * [ ] Enable button
-        * [ ] hide / show buttons
-      * [ ] Get previous page on previous button click
-        * [ ] Set skip, limit
-        * [ ] Disable button
-        * [ ] Request mews
-        * [ ] Enable button
-        * [ ] hide / show buttons
+    * [x] Skip and Limit variables
+    * [x] Remove .reverse()
+    * [x] Load More Button
+      * [x] Hidden on page load
+      * [x] Only show button if has_more is treu
+      * [x] Get next page on button click
+        * [x] Set skip
+        * [x] Hide button
+        * [x] Request mews
+        * [x] Show button
 * [ ] Search
   * Server
     * [ ] Add search param to /v2/mews query params
@@ -36,3 +28,8 @@
       * On click
         * [ ] Set search variable
         * [ ] List mews with search param
+* [ ] Deploy!
+
+# STRETCH
+
+* [ ] Infinite scroll...
