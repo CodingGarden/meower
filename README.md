@@ -1,4 +1,5 @@
 cd server
+
 npm run dev 
 
 open the code using live server and select client.js
