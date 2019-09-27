@@ -1,0 +1,3 @@
+# .eslintignore works via cli but not with certain editor tools.
+# This acts as an effective ignore no matter the context.
+root: true
