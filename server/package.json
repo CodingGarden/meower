@@ -8,17 +8,16 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "bad-words": "^1.6.3",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "express-rate-limit": "^3.1.1",
-    "monk": "^6.0.6",
-    "morgan": "^1.9.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "monk": "^7.0.0",
+    "volleyball": "^1.5.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.19.2"
   }
 }

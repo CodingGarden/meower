@@ -1,48 +1,39 @@
 .title {
-  text-align: center;
+    text-align : center;
+    font-weight : bold;
 }
 
-.error-message {
-  background: #ff9b9b;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
+.mew-form,.loading {
+   width :  50%;
+   margin : 0 auto;
 }
 
-.mew-form, .loading {
-  width: 50%;
-  margin: 0 auto;
+.code {
+    max-width : 200px;
+    color : black;
 }
+
+body {
+    background : linear-gradient(rgba(255,0,0,0.5),rgba(0,0,0,0.5) ), url(ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
+    height : 1000px;
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-template-columns: 1fr;
+}
+
+
+.button-primary {
+    border-radius  : 3%;
+}
+
 
 .loading {
-  text-align: center;
+    text-align: center;
 }
 
 .mews {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.mews > div {
-  background: hsl(0, 0%, 95%);
-  padding: 12px;
-  border-radius: 4px;
-}
-
-.mews > div > h3 {
-  word-wrap: break-word;
-}
-
-.mews > div > p {
-  word-wrap: break-word;
-}
-
-.mews > div:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin: 1em;
+    width : 80%;
+    margin : 0 auto;
+    color : white;
 }
