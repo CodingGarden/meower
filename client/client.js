@@ -13,6 +13,8 @@ let loading = false;
 let finished = false;
 
 errorElement.style.display = 'none';
+loadingElement.style.display = 'none';
+
 
 document.addEventListener('scroll', () => {
   const rect = loadMoreElement.getBoundingClientRect();

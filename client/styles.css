@@ -1,17 +1,27 @@
+.Header {
+  text-align : center;
+}
+
 .title {
   text-align: center;
+  color : black;
 }
 
 .error-message {
-  background: #ff9b9b;
-  color: white;
+  background: lightgreen;
+  color: black;
   border-radius: 5px;
   padding: 10px;
+  font : bold;
+  position : relative;
+  bottom : 50px;
+  font-size : 20px
 }
 
 .mew-form, .loading {
   width: 50%;
   margin: 0 auto;
+  color : black;
 }
 
 .loading {
@@ -21,10 +31,11 @@
 .mews {
   width: 80%;
   margin: 0 auto;
+  color : black;  
 }
 
 .mews > div {
-  background: hsl(0, 0%, 95%);
+  background: hsla(0, 0%, 95%, 0.479);
   padding: 12px;
   border-radius: 4px;
 }
@@ -35,6 +46,8 @@
 
 .mews > div > p {
   word-wrap: break-word;
+  font-size : 25px;
+
 }
 
 .mews > div:not(:last-child) {
@@ -46,3 +59,21 @@
   justify-content: center;
   margin: 1em;
 }
+
+
+body {
+  background : linear-gradient(rgba(255,0,0,0.5),rgba(0,0,0,0.5) ), url(ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
+  height : 1000px;
+  background-repeat : no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-template-columns: 1fr;
+}
+
+
+
+.code {
+  max-width : 200px;
+  color : black;
+}
+
