@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,13 +11,14 @@
   "license": "MIT",
   "dependencies": {
     "bad-words": "^1.6.3",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "express-rate-limit": "^3.1.1",
     "monk": "^6.0.6",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
-  }
+    "nodemon": "^1.19.4"
+  },
+  "description": ""
 }
