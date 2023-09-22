@@ -40,8 +40,8 @@ With the following features:
 * [x] Hide the form
 * [x] Show loading spinner
 * [x] Get data from form and log it
-* ✅ Get user input on the Client
-* ✅ Hide/Show elements on the client
+* [x] Get user input on the Client
+* [x] Hide/Show elements on the client
 
 ## Back-end
 
@@ -57,7 +57,7 @@ With the following features:
 
 * [x] fetch POST /mews with form data
 * [x] See the CORS error and revel in this moment
-* ✅ Send user input from the client with fetch to the server
+* [x] Send user input from the client with fetch to the server
 
 ## Back-end
 
@@ -79,7 +79,7 @@ With the following features:
     * [x] name, content, created_date
   * [x] Insert into DB
   * [x] Respond with created mew object
-* ✅ Store data in a database
+* [x] Store data in a database
 
 ## Front-end
 
@@ -91,7 +91,7 @@ With the following features:
 
 * [x] GET /mews
   * [x] Respond with mews from DB
-* ✅ Retrieve data from a database on the Server
+* [x] Retrieve data from a database on the Server
 
 ## Front-end
 
@@ -101,10 +101,10 @@ With the following features:
   * [x] Reverse before appending
   * [x] Show the form
   * [x] Hide loading spinner
-* [ ] fetch GET /mews after creating a mew
-* ✅ Retrieve data from a server on the client using Fetch
-* ✅ Hide/Show elements on the client
-* ✅ Add elements to the page on the client
+* [x] fetch GET /mews after creating a mew
+* [x] Retrieve data from a server on the client using Fetch
+* [x] Hide/Show elements on the client
+* [x] Add elements to the page on the client
 
 ## Back-end
 
@@ -115,15 +115,15 @@ With the following features:
 
 ## Deploy
 
-* ✅ Deploy server with now
+* [x] Deploy server with now
   * [x] Setup environment variables
     * [x] Database connection
       * process.env.MONGO_URI
-  * ✅ Show mlab
+  * [x] Show mlab
   * [ ] Deploy with environment variable
     * now -e MONGO_URI=@meower-db
   * [ ] Add alias
-* ✅ Deploy client folder with now
+* [ ] Deploy client folder with now
   * [ ] Set API_URL based on hostname
 
 ## What's next?
